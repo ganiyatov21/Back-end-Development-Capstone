@@ -33,9 +33,9 @@ spec:
               name: django-config
               key: secret-key
         - name: PICTURES_SERVICE_URL
-          value: https://getpictures.2giow67dv12q.us-south.codeengine.appdomain.cloud
+          value: https://getpictures.2gj3mbar5sql.us-south.codeengine.appdomain.cloud
         - name: SONGS_SERVICE_URL
-          value: http://songs-sn-labs-u46lawgunnel.labs-prod-openshift-san-a45631dc5778dc6371c67d206ba9ae5c-0000.us-east.containers.appdomain.cloud
+          value: https://u46lawgunnel-5000.theiaopenshiftnext-1-labs-prod-theiaopenshift-4-tor01.proxy.cognitiveclass.ai
         resources:
           requests:
             cpu: 100m
