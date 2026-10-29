@@ -15,7 +15,7 @@ class LoginForm(AuthenticationForm):
         ),
     )
     password = forms.CharField(
-        max_length=50,
+        min_length=3, max_length=50,
         required=True,
         widget=forms.PasswordInput(
             attrs={
@@ -33,7 +33,7 @@ class LoginForm(AuthenticationForm):
         fields = ["username", "password"]
 
 
-class SignUpForm(AuthenticationForm):
+class SignUpForm(forms.Form):
     username = forms.CharField(
         max_length=100,
         required=True,
@@ -45,7 +45,7 @@ class SignUpForm(AuthenticationForm):
         ),
     )
     password = forms.CharField(
-        max_length=50,
+        min_length=3, max_length=50,
         required=True,
         widget=forms.PasswordInput(
             attrs={
@@ -62,3 +62,4 @@ class SignUpForm(AuthenticationForm):
     class Meta:
         model = User
         fields = ["username", "password"]
+
